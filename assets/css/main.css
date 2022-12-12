@@ -1,0 +1,35 @@
+@import '../fonts/fonts.css';
+@import './normilize.css';
+@import '../../components/page/page.css';
+@import '../../components/header/header.css';
+@import '../../components/publish/publish.css';
+@import '../../components/footer/footer.css';
+@import '../../components/container/container.css';
+@import '../../components/about/about.css';
+
+
+:root {
+    --green--1:#95e821;
+    --green--2:#21e874;
+    --purple:#7421e8;
+    --pink:#e82195;
+    --grey:#9b9b9b;
+    --red:#e82132;
+    --pink-pale:#e5bed5;
+
+    --error: var(--red);
+    --success: var(--blue);
+
+    --primary: var(--blue);
+    --secondary: var(--purple);
+}
+
+* {
+    font-family: 'Source Code Pro', monospace;
+}
+
+html, body{
+    margin: 0;
+    height: 100%;
+    background: #f9ed0d;
+}

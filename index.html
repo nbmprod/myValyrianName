@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myValyrianName</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+  <div class="about">
+    <div class="about__notice">
+      <div class="about__closer-container">
+        <button class="about__closer">Close [x]</button>
+      </div>
+      <p class="about__text about__text_discription">This site allows you to make your first and last name look like Valyrian. It uses an algorithm to make names Valyrian-like by changing certain letters and suffixes (or other morphemes).</p>
+      <hr>
+      <p class="about__text about__text_ver">ver. 0.9 features and limitations:</p><br>
+      <p class="about__text about__text_feat">- makes only male Valyrian names;</p><br>
+      <p class="about__text about__text_feat">- better works with short english-like names.</p>
+    </div>
+  </div>
+  <div class="page">
+    <header class="header">
+      <h1 class="header__title">Know your Valyrian name!</h1>
+    </header>
+    <main class="publish">
+      <div class="publish__container"> 
+        <form action="#" method="post" class="publish__form">
+          <label class="publish__content">
+            <div class="publish__section">
+              <h2 class="publish__title">Enter your Name</h2>
+              <input type="text" pattern="[A-Za-z]{1,15}" title="Only latin letters allowed (max-length: 15)" class="publish__input publish__input_name" placeholder="John" name="name">  
+            </div>
+            <div class="publish__section">
+              <h2 class="publish__title">Enter your Surname</h2>
+              <input type="text" pattern="[A-Za-z]{1,15}" title="Only latin letters allowed (max-length: 15)" class="publish__input publish__input_surname" placeholder="Cena" name="surname">  
+            </div>
+          </label>
+          <button type="submit" class="publish__button">Do the magic</button>
+        </form>
+      </div>
+      <div class="publish__container publish__container_final">
+        <div class="publish__final">
+          <p class="publish__greetings">Nice to meet you,</p>
+          <span class="publish__yourname">_______</span>
+          <button class="publish__again">again?</button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__menu">
+        <button class="footer__item footer__item_button">About the project</button>
+        <a href="https://gameofthrones.fandom.com/wiki/Valyrians" target="_blank" class="footer__item">About Valyrians</a>
+      </div>
+      <h4 class="footer__madeby">Know Your Valyrian Name (ver. 0.9)</h4>
+      <h4 class="footer__madeby footer_last">made by <a href="https://t.me/nikita_m_b" target="_blank" class="footer_nb">Nikita Bychkov</a></h4>
+    </footer>
+  </div>  
+  <script src="./script.js"></script>
+</body>
+</html>

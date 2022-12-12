@@ -1,0 +1,14 @@
+
+.page{
+    height: 100%;
+    width: auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.page_fadein{
+    filter: blur(2px);
+    z-index: 0;
+}
