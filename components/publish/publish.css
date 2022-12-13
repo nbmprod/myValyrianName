@@ -74,6 +74,8 @@
     background: none;
     border: 2px solid var(--pink);
     cursor: pointer;
+    color: black;
+    font-weight: 400;
 }
 
 .publish__final{
@@ -113,6 +115,8 @@
     border: none;
     font-size: small;
     opacity: 0;
+    color: black;
+    font-weight: 400;
 }
 
 .publish__again_fadein{

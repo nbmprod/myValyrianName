@@ -62,18 +62,17 @@ function formatString(str) {
     .replace(/^[^ ]/g, match => (match.toUpperCase()));
 }
   
-  const pageComponent = document.querySelector('.page');  
-  const nameForm = document.querySelector('.publish__form');
-  const userName = document.querySelector('.publish__input_name');
-  const userSurname = document.querySelector('.publish__input_surname');
-  const finalName = document.querySelector('.publish__yourname');
-  const publishButton = document.querySelector('.publish__button');
-  const publishButtonOriginalText = publishButton.textContent;
-  const againButton = document.querySelector('.publish__again');
-  const aboutComponent = document.querySelector('.about');
-  const aboutCloser = document.querySelector('.about__closer-container');
-  const aboutButton = document.querySelector('.footer__item_button');
-  
+const pageComponent = document.querySelector('.page');  
+const nameForm = document.querySelector('.publish__form');
+const userName = document.querySelector('.publish__input_name');
+const userSurname = document.querySelector('.publish__input_surname');
+const finalName = document.querySelector('.publish__yourname');
+const publishButton = document.querySelector('.publish__button');
+const publishButtonOriginalText = publishButton.textContent;
+const againButton = document.querySelector('.publish__again');
+const aboutComponent = document.querySelector('.about');
+const aboutCloser = document.querySelector('.about__closer-container');
+const aboutButton = document.querySelector('.footer__item_button');
 
 
   nameForm.onsubmit = function(evt) {
@@ -100,7 +99,11 @@ function formatString(str) {
   }
 
   againButton.onclick = function(){
-    document.location.reload(true)
+    userName.value = "";
+    userSurname.value = "";
+    userName.removeAttribute('disabled','');
+    userSurname.removeAttribute('disabled','');
+    finalName.classList.remove('publish__yourname_fadein');
   }
 
   aboutButton.onclick = function(){

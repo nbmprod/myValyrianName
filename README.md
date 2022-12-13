@@ -8,6 +8,5 @@ It uses an algorithm to make names Valyrian-like by changing certain letters and
 Project made with pure CSS and pure JS.
 
 ## Ver 0.9 features and limitations:
-
 - makes only male Valyrian names;
 - better works with short english-like names.
